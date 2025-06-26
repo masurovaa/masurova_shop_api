@@ -73,8 +73,8 @@ REST_FRAMEWORK = {
     # "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
 }
 
-CELERY_BROKER_URL = 'redis://localhost:6379/0'
-
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/2'
+CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/2'
 
 QUERYCOUNT = {
     "THRESHOLDS": {

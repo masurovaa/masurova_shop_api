@@ -4,11 +4,11 @@
 import os
 import sys
 import dotenv
-dotenv.read_dotenv()
+dotenv.load_dotenv()
 
 
 def main():
-    dotenv.read_dotenv()
+    dotenv.load_dotenv()
     """Run administrative tasks."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "shop_api.settings")
     try:
@@ -24,4 +24,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
